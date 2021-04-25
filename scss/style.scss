@@ -1,0 +1,220 @@
+/*!
+ Theme Name:   ANG FBD 1ere édition
+ Theme URI:    https://auteur.sofad.qc.ca/ang-fbd-1ere-edition
+ Description:  Thème enfant de SOFAD parent
+ Author:       SOFAD - Annick Desmeules
+ Template:     sofadparent
+ Version:      1.0.0
+ Tags:         sofadparent-child
+ Text Domain:  ang-fbd-1ere-edition
+*/
+
+/*
+  Variables
+*/
+
+/*
+  Colors
+    Available:
+
+      $black:         #231f20;
+      $white:         #fff;
+      $rouge-SOFAD:   #C51A1E;
+
+      $grey:          #909090;
+
+*/
+      $black:         #231f20;
+      $white:         #fff;
+      $light-grey:    #F5F5F5;
+      $light-grey-90: transparentize($light-grey,.1);
+      $dark-grey:     #64686d;
+
+      $blue:          #214b57;
+      $dark-blue:     #12323b;
+      $accent-color:  #081639;
+
+/*
+  Fonts
+    Default:
+
+      $BebasNeue: 'Bebas Neue', cursive;
+      $SourceSansPro: 'Source Sans Pro', sans-serif;
+      $Oswald: 'Oswald', sans-serif;
+
+      $font-title:  $BebasNeue;
+      $font-core:   $SourceSansPro;
+      $font-accent: $Oswald;
+*/
+
+/*
+  Breakpoints
+    Default:
+*/
+      $break-small: 521px;
+      $break-medium: 921px;
+      $break-large: 1280px;
+
+
+/*
+  Homepage
+*/
+  .sa-page-hero{
+    background: $accent-color;
+  }
+
+
+/*
+  Toolbar
+*/
+  .sa-toolbar{
+    background: rgba($dark-blue, .75);
+
+    &.sticky{
+      background: $blue;
+    }
+  }
+
+
+/*
+  Navigation drawer
+*/
+  .sa-drawer{
+    a{
+      &.current{
+
+        &.current_link{
+          color: $accent-color;
+        }
+      }
+    }
+  }
+
+
+/*
+  Question
+*/
+  .sa-question{
+
+    input[type=text],
+    textarea{
+
+      &:focus {
+        border-bottom-color: $accent-color;
+      }
+    }
+  }
+
+  button {
+    background-color: $accent-color;
+
+    &:hover {
+      background-color: rgba($accent-color,.9);
+    }
+  }
+
+  .sa-conclusion{
+    border-left: 2px solid $accent-color;
+  }
+
+
+/*
+  Table
+*/
+  .table{
+    border-bottom: 3px solid $accent-color;
+
+    thead{
+      th{
+        background: $accent-color;
+      }
+    }
+
+    tbody{
+
+      & tr:nth-child(odd){
+        background: rgba($accent-color,.1);
+      }
+
+      td{
+        border-left: 1px solid $accent-color;
+      }
+    }
+
+    &.no-header{
+      border-top: 3px solid $accent-color;
+    }
+  }
+
+
+/*
+  Base
+*/
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    color: $accent-color;
+  }
+
+  figure{
+    figcaption{
+      &::before{
+        background: $accent-color;
+      }
+    }
+  }
+
+ul.accordion li.accordion-item a.accordion-title{
+  border-color: $accent-color;
+}
+
+/*
+  Custom
+
+*/
+
+
+.code{
+  background: $light-grey;
+  padding: 1rem 2rem;
+}
+
+pre{
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.encadre{
+  border: 1px solid $black;
+  padding: 1rem 2rem;
+  margin: 4rem auto;
+  width: 75%;
+}
+
+.sideblock{
+  border-left: 1px solid $dark-grey;
+  font-size: 1.6rem;
+  padding: 2rem;
+  background: $light-grey-90;
+}
+
+
+
+@media screen and (min-width: $break-small) {
+
+}
+
+@media screen and (min-width: $break-medium) {
+
+}
+
+
+@media screen and (min-width: $break-large) {
+
+}
